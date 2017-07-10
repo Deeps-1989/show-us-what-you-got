@@ -78,7 +78,6 @@ describe('<MenuContainer/>', () => {
          expect(wrapper.find('[isMobileAndActive="nav-list active"]').length).to.equal(1);
         });
         it('should check if appropriate handleClick function is called when user click the menu', () => {
-
           let spy = sinon.spy(MenuContainer.prototype, "isMobile");
           const wrapper = buildSubject();
           expect(wrapper.find('[id="nav-toggle"]').length).to.equal(1);
