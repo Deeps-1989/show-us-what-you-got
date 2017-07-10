@@ -31,15 +31,4 @@ describe('<Sub Menu/>', () => {
      const wrapper = buildSubject();
      expect(wrapper.find('[className="nav-dropdown open"]').length).to.equal(1);
     });
-   //  it('should check menu should not be open when user dont click', () => {
-   //    const wrapper = buildSubject();
-   //    wrapper.setState({index:-1});
-   //    console.log(wrapper.debug());
-   //    expect(wrapper.find('[active="nav-dropdown"]').length).to.equal(1);
-   //   });
-   // it('should check appropriate subMenu should get opened and correct props are passed when clicked', () => {
-   //   const wrapper = buildSubject();
-   //   wrapper.setState({index:0});
-   //   expect(wrapper.find('[active="nav-dropdown open"]').length).to.equal(1);
-   //  });
 });
