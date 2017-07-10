@@ -1,0 +1,47 @@
+{
+  "name": "moshtix",
+  "version": "1.0.0",
+  "description": "A example exercise",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node dist/server.js",
+    "start": "./node_modules/.bin/webpack --config webpack.config.js && npm run build",
+    "build": "babel src/server.js --out-file dist/server.js && npm run serve",
+    "test": "./node_modules/.bin/mocha --recursive --compilers js:babel-register"
+  },
+  "author": "Deepak Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.15.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+   "babel-cli": "^6.24.1",
+   "babel-core": "^6.25.0",
+   "babel-loader": "^7.1.1",
+   "babel-preset-es2015": "^6.24.1",
+   "babel-preset-react": "^6.24.1",
+   "babel-register": "^6.24.1",
+   "chai": "^4.0.2",
+   "css-loader": "^0.28.4",
+   "enzyme": "^2.9.1",
+   "extract-text-webpack-plugin": "^2.1.2",
+   "file-loader": "^0.11.2",
+   "html-webpack-plugin": "^2.29.0",
+   "mocha": "^3.4.2",
+   "node-sass": "^4.5.3",
+   "prop-types": "^15.5.10",
+   "react-test-renderer": "^15.6.1",
+   "rimraf": "^2.6.1",
+   "sass-loader": "^6.0.6",
+   "sinon": "^2.3.6",
+   "sinon-chai": "^2.11.0",
+   "style-loader": "^0.18.2",
+   "url-loader": "^0.5.9",
+   "webpack": "^2.4.1"
+  }
+}

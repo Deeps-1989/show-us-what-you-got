@@ -105,8 +105,14 @@ Now when you change code in the project src folder, nodemon will re-transpile, r
 
 ## Test Three
 
-Currently, the 'test three' project includes a single file (menu-data.json), which as you may have guessed, contains a menu structure represented as JSON.
+## Running the project
 
-Using React and which ever other tools/libraries you choose, implement a website that includes a working menu that renders the menu items from the provided JSON file.
+To compile and build the project:
+1. cd into test-three and run `npm install`
+1. use `npm start` command wait for webpack to compile package and node server to start
+1. Run `http://localhost:3000` to see the webpage. Make sure 3000 is not occupied otherwise server wont start.
 
-The website does not necessarily need to include any content, your focus should be on the menu. Feel free to extend or manipulate the structure of the JSON file if necessary.
+Running Test:
+1. Make sure all dependencies are installed via `npm install`
+1. When dependencies are installed node_modules folder will be created
+1. Now run `npm test`
